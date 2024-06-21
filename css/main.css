@@ -1,9 +1,81 @@
 /* googke font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+:root {
+    --bg-body: hsl(0, 0%, 95%);
+    --font-family: "DM Sans",
+        sans-serif;
+}
 
 * {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-family);
     font-optical-sizing: auto;
     font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* estilos del header */
+header {
+    padding: 40px 0;
+}
+
+header .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p {
+    color: hsl(0, 0%, 61%);
+}
+
+header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda {
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+}
+
+header .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a {
+    color: hsl(0, 0%, 61%);
+    margin: 10px 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+header .categorias a.activo {
+    color: hsl(0, 0%, 0%);
 }
