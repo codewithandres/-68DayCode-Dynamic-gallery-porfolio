@@ -79,3 +79,36 @@ header .categorias a {
 header .categorias a.activo {
     color: hsl(0, 0%, 0%);
 }
+
+/* stilos del grid */
+
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+
+    &.imagenes-cargadas {
+        opacity: 1;
+    }
+}
+
+.grid .item {
+    position: absolute;
+    padding: 0;
+    display: block;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5em;
+    cursor: pointer;
+    vertical-align: top;
+}
