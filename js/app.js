@@ -7,7 +7,7 @@ const grid = new Muuri(".grid", {
 window.addEventListener("load", () => {
   grid.refreshItems().layout();
   document.getElementById("grid").classList.add("imagenes-cargadas");
-
+  // agregamos los listener para filtrar por categorias
   const enlaces = document.querySelectorAll("#categorias a");
   enlaces.forEach((elemento) => {
     elemento.addEventListener("click", (event) => {
@@ -23,4 +23,15 @@ window.addEventListener("load", () => {
         : grid.filter(`[data-categoria="${categorias}"]`);
     });
   });
+
+  //   agregamos llistener para la barra de busqueda
+  document
+    .querySelector("#barra-busqueda")
+    .addEventListener("input", (event) => {
+      const busqueda = event.target.value;
+
+      grid.filter((iten) =>
+        iten.getElement().dataset.etiquetas.includes(busqueda)
+      );
+    });
 });
