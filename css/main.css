@@ -167,6 +167,7 @@ header .categorias a.activo {
     background-color: var(--bg-body);
     padding: 10px;
     text-align: center;
+    color: #000;
     border-radius: 0.4em;
     transform: translateY(100px);
     opacity: 0;
