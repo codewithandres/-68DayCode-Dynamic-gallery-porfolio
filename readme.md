@@ -1,3 +1,5 @@
+![alt text](<screen/bandicam 2024-06-22 16-57-23-784.jpg>)
+
 # Dynamic Gallery Portfolio
 
 ¡Bienvenido a Dynamic Gallery Portfolio! Este proyecto es parte de mi desafío de 100 días de código y está diseñado para mostrar una galería dinámica de imágenes.
