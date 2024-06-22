@@ -183,3 +183,70 @@ header .categorias a.activo {
     right: -25px;
     top: -25px;
 }
+
+/* estyle footer */
+footer .redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: 200ms ease-in;
+}
+
+footer .redes-sociales .linkedin {
+    background-color: hsl(221, 100%, 50%);
+}
+
+footer .redes-sociales .facebook {
+    background-color: hsl(207, 91%, 38%);
+}
+
+footer .redes-sociales .instagram {
+    background-color: hsl(325, 97%, 54%);
+}
+
+footer .redes-sociales a i {
+    font-size: 1.5em;
+}
+
+footer .contenedor-icon:hover a {
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+footer .creado-por {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: .8em;
+    color: #c13584;
+}
+
+footer .creado-por a {
+    color: #000;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
