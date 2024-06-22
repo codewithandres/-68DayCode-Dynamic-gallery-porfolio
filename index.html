@@ -1,125 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Porfolio dinamico | codewithandres</title>
-        <!-- remix icon -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-            rel="stylesheet"
-        />
-        <!-- custom css -->
-        <link rel="stylesheet" href="css/main.css" />
-        <!-- custom js -->
-        <script type="module" src="js/app.js"></script>
-    </head>
 
-    <body>
-        <div class="contenedor">
-            <header>
-                <div class="logo">
-                    <h1>Andres Guzman</h1>
-                    <p>Desarrollador Web</p>
-                </div>
-                <form action="/">
-                    <input
-                        type="search"
-                        class="barra-busqueda"
-                        id="barra-busqueda"
-                        placeholder="buscar"
-                    />
-                </form>
-                <div class="categorias" id="categorias">
-                    <a href="#" class="activo">Todos</a>
-                    <a href="#">Naturaleza</a>
-                    <a href="#">Ciudades</a>
-                    <a href="#">Personas</a>
-                    <a href="#">Animales</a>
-                </div>
-            </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio dinamico | codewithandres</title>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- custom js -->
+    <script type="module" src="js/app.js"></script>
+</head>
 
-            <section class="grid" id="grid">
-                <!-- items  -->
-                <div
-                    class="item"
-                    data-categoria="ciudades"
-                    data-etiquetas="ciudades autos carros calles"
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- item -->
-                <div
-                    class="item"
-                    data-categoria="personas"
-                    data-etiquetas="persona mujer "
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/2.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- item -->
-                <div
-                    class="item"
-                    data-categoria="personas"
-                    data-etiquetas="persona mujer ada"
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/3.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- item -->
-                <div
-                    class="item"
-                    data-categoria="personas"
-                    data-etiquetas="persona mujer androide furturo"
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/4.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- item -->
-                <div
-                    class="item"
-                    data-categoria="animales"
-                    data-etiquetas="gato arquero ficcion"
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/5.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- item -->
-                <div
-                    class="item"
-                    data-categoria="naturaleza"
-                    data-etiquetas="persona mujer androide futuro ficcion"
-                    data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?"
-                >
-                    <div class="item-contenido">
-                        <img src="img/6.jpg" alt="" />
-                    </div>
-                </div>
-            </section>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Andres Guzman</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="/">
+                <input type="search" class="barra-busqueda" id="barra-busqueda" placeholder="buscar" />
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
 
-            <section class="overlay" id="overlay">
-                <div class="contenedor-img">
-                    <button id="btn-cerrar-popup">
-                        <i class="ri-close-line"></i>
-                    </button>
-                    <img src="" alt="imagen del modal" />
+        <section class="grid" id="grid">
+            <!-- items  -->
+            <div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles"
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/1.jpg" alt="" />
                 </div>
-                <p class="descripcion"></p>
-            </section>
-        </div>
+            </div>
+            <!-- item -->
+            <div class="item" data-categoria="personas" data-etiquetas="persona mujer "
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/2.jpg" alt="" />
+                </div>
+            </div>
+            <!-- item -->
+            <div class="item" data-categoria="personas" data-etiquetas="persona mujer ada"
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/3.jpg" alt="" />
+                </div>
+            </div>
+            <!-- item -->
+            <div class="item" data-categoria="personas" data-etiquetas="persona mujer androide furturo"
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/4.jpg" alt="" />
+                </div>
+            </div>
+            <!-- item -->
+            <div class="item" data-categoria="animales" data-etiquetas="gato arquero ficcion"
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/5.jpg" alt="" />
+                </div>
+            </div>
+            <!-- item -->
+            <div class="item" data-categoria="naturaleza" data-etiquetas="persona mujer androide futuro ficcion"
+                data-descripcion="1. -Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, incidunt?">
+                <div class="item-contenido">
+                    <img src="img/6.jpg" alt="" />
+                </div>
+            </div>
+        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
-    </body>
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup">
+                    <i class="ri-close-line"></i>
+                </button>
+                <img src="" alt="imagen del modal" />
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icon">
+                    <a class="linkedin" href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icon">
+                    <a class="facebook" href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icon">
+                    <a class="instagram" href="http://" target="_blank" rel="noopener noreferrer">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p> Sitio diseñado por
+                    <a href="#" target="_blank" rel="noopener noreferrer">Carlos arturo</a> - <a
+                        href="www.codewithandres.io">@codewithandres</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+</body>
+
 </html>
