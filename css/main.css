@@ -250,3 +250,15 @@ footer .creado-por a {
         text-decoration: underline;
     }
 }
+
+/* estilos responsives */
+
+@media screen and (max-width: 700px) {
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+
+    header .barra-busqueda {
+        width: 100%;
+    }
+}
