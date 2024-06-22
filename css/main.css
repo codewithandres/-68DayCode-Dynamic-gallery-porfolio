@@ -16,8 +16,9 @@
 }
 
 body {
-    background-color: var(--bg-body);
+    background-color: hsl(216, 13%, 8%);
     font-family: var(--font-family);
+    color: hsl(0, 44%, 96%);
 }
 
 a {
@@ -38,6 +39,11 @@ header {
 header .logo {
     text-align: center;
     margin-bottom: 40px;
+
+    h1 {
+
+        font-size: 2.5em;
+    }
 }
 
 header .logo p {
@@ -69,14 +75,14 @@ header .categorias {
 }
 
 header .categorias a {
-    color: hsl(0, 0%, 61%);
+    color: hsl(0, 0%, 39%);
     margin: 10px 20px;
     font-size: 1.1em;
     font-weight: 700;
 }
 
 header .categorias a.activo {
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 
 /* stilos del grid */
@@ -240,11 +246,11 @@ footer .creado-por {
     margin-bottom: 40px;
     text-align: center;
     font-size: .8em;
-    color: #c13584;
+    color: hsl(324, 20%, 95%);
 }
 
 footer .creado-por a {
-    color: #000;
+    color: hsl(0, 0%, 89%);
 
     &:hover {
         text-decoration: underline;
